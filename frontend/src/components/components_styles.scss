@@ -1,0 +1,98 @@
+/// navbar styles
+nav {
+    display: flex;
+    box-shadow: var(--shadow);
+    position: relative;
+    min-height: 100vh;
+
+    p, li, button {
+        color: white;
+    }
+    ul {
+        // height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+    li {
+        list-style: none;
+    }
+    .NavLink {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.nav-pt2 {
+    display: none;
+    background-color: rgb(58, 20, 181);
+    gap: 1em;
+    padding: 1em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+
+    li {
+        width: 2em;
+        height: 2em;
+        background-color: rgb(86, 105, 227);
+        border-radius: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.nav-pt1.min {
+    background-color: var(--almost-black);
+    gap: 0;
+    padding-top: 4em;
+    padding-bottom: 2em;
+
+    .NavLink {
+        width: 8em;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+        color: rgb(255, 255, 255, 1);
+        transition: 0.3s all ease;
+    }
+}
+
+.nav-pt1.max {
+    background-color: var(--almost-black);
+    gap: 0;
+    padding-top: 4em;
+    padding-bottom: 2em;
+
+    .NavLink {
+        width: 1em;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        padding-left: 1em;
+        color: rgb(255, 255, 255, 0);
+        transition: 0.3s all ease;
+    }
+}
+
+.NavLink:hover {
+    background-color: rgb(182, 32, 72);
+    background-color: rgb(255, 177, 74);
+    transition: 0.3s all ease;
+}
+.NavLink.active {
+    //background-color: rgb(255, 137, 74);
+    background-color: rgb(18, 6, 52);
+    transition: 0.3s all ease;
+}
+
+.min-max {
+    position: absolute;
+    top: 2em;
+    right: -1.5em;
+    background-color: var(--almost-black);
+    width: 2em;
+    height: 2em;
+    border-radius: 0 2em 2em 0;
+}
