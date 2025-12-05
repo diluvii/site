@@ -21,11 +21,16 @@ function About(props) {
             </p>
             <p>
                 Feel free to reach out with queries regarding art commissions (I do illustrations, graphic design, and UI/UX) or any sort of programming 
-                project! I am emailable at <a href="yawen.xue.26@dartmouth.edu">yawen.xue.26@dartmouth.edu</a>.
+                project! I am emailable at <a href="mailto:yawen.xue.26@dartmouth.edu">yawen.xue.26@dartmouth.edu</a>.
             </p>
 
             <div className="section resume">
-                <p>&gt;&gt; <a>click here for my resume</a> :)</p>
+                <div className="soc-med-bar">
+                    <button className="soc-med">github</button>
+                    <button className="soc-med">goodreads</button>
+                    <button className="soc-med">instagram</button>
+                </div>
+                <p>&gt;&gt; <a href="/resume2.pdf" target="_blank" rel="noopener noreferrer">click here for my resume</a> :)</p>
             </div>
         </div>
     )

@@ -6,37 +6,32 @@ function Art(props) {
         {
             "title": "placeholder",
             "desc": "placeholder",
-            "img-link": "/public/giordano.png"
+            "img": "/art/hanged-man.PNG"
         },
         {
             "title": "placeholder",
             "desc": "placeholder",
-            "img-link": "/public/giordano.png"
+            "img": "/art/armand.GIF"
         },
         {
             "title": "placeholder",
             "desc": "placeholder",
-            "img-link": "/public/giordano.png"
+            "img": "/art/giordano.png"
         },
         {
             "title": "placeholder",
             "desc": "placeholder",
-            "img-link": "/public/giordano.png"
+            "img": "/art/collage.PNG"
         },
         {
             "title": "placeholder",
             "desc": "placeholder",
-            "img-link": "/public/giordano.png"
+            "img": "/art/anim-1.gif"
         },
         {
             "title": "placeholder",
             "desc": "placeholder",
-            "img-link": "/public/giordano.png"
-        },
-        {
-            "title": "placeholder",
-            "desc": "placeholder",
-            "img-link": "/public/giordano.png"
+            "img": "/art/boat.PNG"
         }
     ]
 
@@ -48,7 +43,7 @@ function Art(props) {
                     <div className="post art"
                     >
                         <img
-                            src="/public/giordano.png"
+                            src={item.img}
                         />
                     </div>
                 ))}

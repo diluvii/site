@@ -2,8 +2,8 @@
 
 body, html {
     font-family: "Montserrat", sans-serif;
-    background: linear-gradient(to bottom, white 0%,#f5fdff 40%,#eae9ff 100%) fixed;
-    //background-color: rgb(198, 192, 215);
+    // background: linear-gradient(to bottom, white 0%,#f5fdff 40%,#eae9ff 100%) fixed;
+    background-color: white;
     min-height: 100%;
     height: auto;
     line-height: 1.5;
@@ -31,7 +31,7 @@ body, html {
     text-size-adjust: 100%;
 
     --almost-black: rgb(18, 6, 52);
-    --shadow: 0.25em 0em 0.25em rgba(33, 34, 36, 0.25);
+    --shadow: 0.25em 0.25em 0.25em rgba(33, 34, 36, 0.25);
 }
 
 .screen {
