@@ -22,7 +22,7 @@ function Navbar(props) {
                 <li><NavLink to="/" className="NavLink">home</NavLink></li>
                 <li><NavLink to="/art" className="NavLink">art</NavLink></li>
                 <li><NavLink to="/code" className="NavLink">code</NavLink></li>
-                <li><NavLink to="/about" className="NavLink">about</NavLink></li>
+                {/*<li><NavLink to="/about" className="NavLink">about</NavLink></li>*/}
             </ul>
             <button
                 className="min-max"
