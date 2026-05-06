@@ -19,8 +19,8 @@ function App(props) {
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/art" element={<Art />} />
-              <Route path="/code" element={<Code />} />
-              {/*<Route path="/about" element={<About/>} />*/}
+              <Route path="/cs" element={<Code />} />
+              <Route path="/about" element={<About/>} />
           </Routes>
         </div>
       </div>

@@ -3,35 +3,33 @@ import './page_styles.scss'
 
 function About(props) {
     return (
-        <div className="page">
-            <h2>&gt;&gt; about me</h2>
-            <p>—</p>
+        <div className="page about">
+            <h2>about &gt;&gt;</h2>
+            <p></p>
             <p>
-                Hello & welcome to my website! I'm Yawen (they/any). I do software development, systems programming, NLP, 
-                and all sorts of art. 🍊🌿✨
+                My name is Yawen (they/them). I dwell in 
+                the swamps where the fish are afraid of me.
+                (This is pictured below.)
             </p>
             <p>
-                I'm a senior at Dartmouth College, where I am acquiring majors in Computer Science and Cognitive Science. 
-                I've done software work on several projects, and am branching out into systems and NLP. Currently researching
-                hardware fault injection in a cybersecurity lab, and developing a 2D platformer game in my free time.
+                I study CS and linguistics, and aim to live 
+                close to nature and make things with my hands. 
+                My academic interests are as follows—compilers, 
+                PL, natural language as a representational medium 
+                for cognition. I also like semantic typology, 
+                learning languages, long walks on the train tracks or
+                in the woods, post-punk music, all kinds of art.
             </p>
             <p>
-                I adore post-punk music and my favorite programming language is Rust. In my free time I like 
-                to learn languages (natural or programming) and take walks in the woods.
+                I've lived in Nanjing, the San Francisco Bay Area, and 
+                Hanover NH.
             </p>
-            <p>
-                Feel free to reach out with queries regarding art commissions (I do illustrations, graphic design, and UI/UX) or any sort of programming 
-                project! I am emailable at <a href="mailto:yawen.xue.26@dartmouth.edu">yawen.xue.26@dartmouth.edu</a>.
-            </p>
-
-            <div className="section resume">
-                <div className="soc-med-bar">
-                    <button className="soc-med">github</button>
-                    <button className="soc-med">goodreads</button>
-                    <button className="soc-med">instagram</button>
-                </div>
-                <p>&gt;&gt; <a href="/resume2.pdf" target="_blank" rel="noopener noreferrer">click here for my resume</a> :)</p>
-            </div>
+            <p className="center">𓆝 𓆟 𓆞</p>
+            <img 
+                className="img-about"
+                src={"/me.webp"}
+                loading="lazy"
+            />
         </div>
     )
 }
