@@ -37,7 +37,7 @@ function Art(props) {
 
     return (
         <div className="page">
-            <h2>&gt;&gt; art</h2>
+            <h2>art &gt;&gt;</h2>
 
             <div className="post-area art">
             {dummyArtposts.map((item, i) => {

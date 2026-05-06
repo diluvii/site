@@ -20,6 +20,7 @@ nav {
     .NavLink {
         color: white;
         text-decoration: none;
+        font-weight: 500;
     }
 }
 
@@ -44,7 +45,7 @@ nav {
 
 .nav-pt1.min {
     background-color: var(--almost-black);
-    background: linear-gradient(to bottom, var(--almost-black) 0%,rgb(30, 19, 65) 40%,rgb(11, 3, 33) 100%) fixed;
+    // background: linear-gradient(to bottom, var(--almost-black) 0%,rgb(30, 19, 65) 40%,rgb(11, 3, 33) 100%) fixed;
     gap: 0;
     padding-top: 4em;
     padding-bottom: 2em;
@@ -82,12 +83,15 @@ nav {
 .NavLink:hover {
     background-color: rgb(182, 32, 72);
     background-color: rgb(255, 177, 74);
+    background-color: rgb(121, 169, 219);
     transition: 0.3s all ease;
 }
+
 .NavLink.active {
     //background-color: rgb(255, 137, 74);
     //background-color: rgb(18, 6, 52);
     transition: 0.3s all ease;
+    font-weight: 700;
 }
 
 .min-max {
