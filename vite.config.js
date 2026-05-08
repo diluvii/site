@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     // eslint(),
   ],
+  base: '/site/',
   css: {
     postcss: {
       plugins: [
