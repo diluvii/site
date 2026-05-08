@@ -1,6 +1,8 @@
 import React from "react";
 import './page_styles.scss'
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`.replace(/\/+/g, '/');
+
 function About(props) {
     return (
         <div className="page about">
@@ -27,7 +29,7 @@ function About(props) {
             <p className="center">𓆝 𓆟 𓆞</p>
             <img 
                 className="img-about"
-                src={"/me.webp"}
+                src={asset("/me.webp")}
                 loading="lazy"
             />
         </div>
