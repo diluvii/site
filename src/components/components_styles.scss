@@ -51,14 +51,19 @@ nav {
     padding-bottom: 2em;
     z-index: 10;
 
-    .NavLink {
+    .NavLink, .navlink-div {
         width: 8em;
-        height: 2em;
+        height: 1.75em;
         display: flex;
         align-items: center;
         padding-left: 1em;
         color: rgb(255, 255, 255, 1);
         transition: 0.3s all ease;
+    }
+
+    .navlink-div {
+        height: 6em;
+        font-size: 0.8em;
     }
 }
 
@@ -69,14 +74,19 @@ nav {
     padding-bottom: 2em;
     z-index: 10;
 
-    .NavLink {
+    .NavLink, .navlink-div {
         width: 1em;
-        height: 2em;
+        height: 1.75em;
         display: flex;
         align-items: center;
         padding-left: 1em;
         color: rgb(255, 255, 255, 0);
         transition: 0.3s all ease;
+    }
+
+    .navlink-div {
+        height: 6em;
+        font-size: 0.8em;
     }
 }
 
@@ -103,4 +113,17 @@ nav {
     height: 2em;
     border-radius: 0 2em 2em 0;
     z-index: 9;
+}
+
+/// responsiveness //
+@media (max-width: 440px) {
+    .nav-pt1.min {
+        .NavLink {
+            width: 18em;
+        }
+
+        li {
+            font-size: 1em;
+        }
+    }
 }

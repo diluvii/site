@@ -7,7 +7,6 @@ function About(props) {
     return (
         <div className="page about">
             <h2>about &gt;&gt;</h2>
-            <p></p>
             <p>
                 My name is Yawen (they/them). I dwell in 
                 the swamps where the fish are afraid of me.
