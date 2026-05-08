@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter, Routes, Route,
+  HashRouter, Routes, Route,
 } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
@@ -12,7 +12,7 @@ import About from './pages/About';
 
 function App(props) {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="screen">
         <Navbar />
         <div className="contents">
@@ -24,7 +24,7 @@ function App(props) {
           </Routes>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
