@@ -1,5 +1,6 @@
 import React from "react";
-import './page_styles.scss'
+import { Link } from 'react-router-dom';
+import './page_styles.scss';
 
 function Home(props) {
     return (
@@ -9,7 +10,7 @@ function Home(props) {
             <p></p>
             <p className="desc-home">
                 This is Yawen's site. Here you can find things on&nbsp;
-                <a href="/cs">CS</a>, <a href="/art">art</a>, linguistics, cognitive science, 
+                <Link to="/cs">CS</Link>, <Link to="/art">art</Link>, linguistics, cognitive science,
                 et cetera :)
             </p>
         </div>

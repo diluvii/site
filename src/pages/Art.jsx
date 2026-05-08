@@ -1,5 +1,5 @@
 import React from "react";
-import './page_styles.scss'
+import './page_styles.scss';
 
 const asset = (path) => `${import.meta.env.BASE_URL}${path}`.replace(/\/+/g, '/');
 
