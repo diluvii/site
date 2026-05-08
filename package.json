@@ -1,8 +1,8 @@
 {
-  "name": "starter",
+  "name": "site",
   "version": "1.0.0",
   "description": "starterpack for react projects",
-  "homepage": "https://diluvii.github.io/site",
+  "homepage": "https://diluvii.github.io/site/",
   "bugs": {
     "url": "https://github.com/yawenx2004/starter/issues"
   },
