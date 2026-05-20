@@ -7,9 +7,11 @@ function Art(props) {
     const dummyArtposts = [
         { "title": "placeholder", "desc": "placeholder", "img": asset("art/hanged-man.jpg") },
         { "title": "placeholder", "desc": "placeholder", "img": asset("art/armand.webm") },
+        { "title": "placeholder", "desc": "placeholder", "img": asset("art/eboshi.webp") },
         { "title": "placeholder", "desc": "placeholder", "img": asset("art/giordano.jpg") },
         { "title": "placeholder", "desc": "placeholder", "img": asset("art/collage.jpg") },
         { "title": "placeholder", "desc": "placeholder", "img": asset("art/anim-1.webm") },
+        { "title": "placeholder", "desc": "placeholder", "img": asset("art/sart.webm") },
         { "title": "placeholder", "desc": "placeholder", "img": asset("art/boat.jpg") },
     ]
 

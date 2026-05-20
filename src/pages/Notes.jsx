@@ -8,7 +8,7 @@ function Notes(props) {
             <p>
                 Likely here will be very informal notes on
                 compilers, PL, theory of computation, complexity theory; 
-                semantics & pragmatics, semantic typology.
+                semantics & pragmatics, semantic typology, syntax.
             </p>
         </div>
     )
