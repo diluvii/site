@@ -19,7 +19,7 @@ function About(props) {
                 PL, natural language as a representational medium 
                 for cognition. I also like semantic typology, 
                 learning languages, long walks on the train tracks or
-                in the woods, post-punk music, all kinds of art.
+                in the woods, bird ID, post-punk music, all kinds of art.
             </p>
             <p>
                 I've lived in Nanjing, the San Francisco Bay Area, and 

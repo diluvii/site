@@ -14,8 +14,9 @@ function Code(props) {
                 software and NLP work, and studied 
                 hardware security through voltage-based fault injection.
             </p>
+            <p>I also like computational linguistics and good design.</p>
             <p>
-                I am about to start the MSCS program at Carnegie Mellon University. 
+                I am currently undergoing the MSCS program at Carnegie Mellon University. 
                 For undergraduate studies, I double majored in Computer Science and 
                 Cognitive Science (focus area in Linguistics) at Dartmouth College.
             </p>
@@ -56,7 +57,7 @@ function Code(props) {
                     </li>
             </ul>
 
-            <p className="center">𓆝 𓆟 𓆞</p>
+            {/*<p className="center">𓆝 𓆟 𓆞</p>
 
             <h3>Other Work</h3>
             <ul>
@@ -74,7 +75,7 @@ function Code(props) {
                     >Forgles</a>: My undergraduate Cognitive Science thesis on category learning under 
                     verbal interference.
                 </li>
-            </ul>
+            </ul>*/}
         </div>
     )
 }
