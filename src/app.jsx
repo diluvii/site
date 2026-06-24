@@ -26,8 +26,8 @@ function App(props) {
               <Route path="/art" element={<Art />} />
               <Route path="/cs" element={<Code />} />
               <Route path="/about" element={<About/>} />
-              <Route path="/notes" element={<Notes/>} />
-              <Route path="/notes/15503" element={<Notes15503/>} />
+              {/* <Route path="/notes" element={<Notes/>} />
+              <Route path="/notes/15503" element={<Notes15503/>} */}
               <Route path="/cv" element={<CV/>} />
           </Routes>
         </div>

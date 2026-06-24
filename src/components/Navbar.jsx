@@ -25,7 +25,7 @@ function Navbar(props) {
                 <li><NavLink to="/about" className="NavLink">about</NavLink></li>
                 <li><p className="navlink-div">𓅪.˚⊹ ོ</p></li>
                 <li><NavLink to="/cv" className="NavLink">CV</NavLink></li>
-                <li><NavLink to="/notes" className="NavLink">notes</NavLink></li>
+                {/* <li><NavLink to="/notes" className="NavLink">notes</NavLink></li> */}
             </ul>
             <button
                 className="min-max"

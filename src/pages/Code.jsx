@@ -47,7 +47,7 @@ function Code(props) {
                 </li>
             </ul>
             <p></p>
-            <h3>Conferences</h3>
+            <h3>Summer Schools</h3>
             <ul>
                 <li>
                     <a
