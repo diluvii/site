@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HashRouter, Routes, Route,
+  BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
@@ -12,12 +12,9 @@ import About from './pages/About';
 import Notes from './pages/Notes';
 import CV from './pages/CV';
 
-// notes pages
-import Notes15503 from './pages/15503';
-
 function App(props) {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="screen">
         <Navbar />
         <div className="contents">
@@ -32,7 +29,7 @@ function App(props) {
           </Routes>
         </div>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

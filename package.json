@@ -16,10 +16,10 @@
   "main": "src/index.js",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
