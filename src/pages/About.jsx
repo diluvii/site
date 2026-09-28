@@ -13,7 +13,7 @@ function About(props) {
                 (This is pictured below.)
             </p>
             <p>
-                I study CS and linguistics, and aim to live 
+                I study CS, cognitive science, and linguistics; and aim to live 
                 close to nature and make things with my hands. 
                 My academic interests are as follows—compilers, 
                 PL, natural language as a representational medium 
@@ -22,7 +22,7 @@ function About(props) {
                 in the woods, bird ID, post-punk music, all kinds of art.
             </p>
             <p>
-                I've lived in Nanjing, the San Francisco Bay Area, and 
+                I've lived in Nanjing, the San Francisco Bay Area, and
                 Hanover NH.
             </p>
             <p className="center">𓆝 𓆟 𓆞</p>
