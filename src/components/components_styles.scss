@@ -2,7 +2,7 @@
 nav {
     display: flex;
     box-shadow: 0.25em 0em 0.25em rgba(33, 34, 36, 0.25);
-    position: relative;
+    position: fixed;
     min-height: 100vh;
 
     p, li, button {

@@ -32,6 +32,12 @@ function Art(props) {
                 );
             })}
             </div>
+
+            <p className="center">𓆝 𓆟 𓆞</p>
+            <iframe 
+                src="/art/portfolio.pdf"
+                className="slides"
+            />
         </div>
     );
 }
