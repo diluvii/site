@@ -14,6 +14,7 @@ import CV from './pages/CV';
 function App(props) {
   return (
     <BrowserRouter>
+      <img className="bug" src="/01111.png"/>
       <div className="screen">
         <Navbar />
         <div className="contents">

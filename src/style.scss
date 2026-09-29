@@ -22,6 +22,14 @@ body, html {
     display: none;
 }
 
+.bug {
+    position: fixed;
+    width: 12em;
+    height: 12em;
+    bottom: 2em;
+    right: 2em;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +61,7 @@ body, html {
 button {
     border: none;
     background: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 1em;
     margin: 0;
     padding: 0;

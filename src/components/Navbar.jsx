@@ -20,8 +20,8 @@ function Navbar(props) {
                 ${isMin ? "min" : "max"}
             `}>
                 <li><NavLink to="/" className="NavLink">home</NavLink></li>
-                <li><NavLink to="/cs" className="NavLink">CS</NavLink></li>
                 <li><NavLink to="/art" className="NavLink">art</NavLink></li>
+                <li><NavLink to="/cs" className="NavLink">cs</NavLink></li>
                 <li><NavLink to="/about" className="NavLink">about</NavLink></li>
                 <li><p className="navlink-div">𓅪.˚⊹ ོ</p></li>
                 <li><NavLink to="/cv" className="NavLink">CV</NavLink></li>
