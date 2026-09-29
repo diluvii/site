@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router';
 import './components_styles.scss'
 
-function Navbar(props) {
-    const [isMin, setIsMin] = useState(false);
-    const handleClick = () => {
-        setIsMin(isMin => !isMin)
-    }
-
+function Navbar({ isMin, onToggle }) {
     return (
         <nav>
             <ul className="nav-pt2">
@@ -29,7 +24,7 @@ function Navbar(props) {
             </ul>
             <button
                 className="min-max"
-                onClick={handleClick}
+                onClick={onToggle}
             >
                 {isMin? "<" : ">"}
             </button>

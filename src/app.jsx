@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter, Routes, Route,
 } from 'react-router-dom';
@@ -13,12 +13,20 @@ import About from './pages/About';
 import CV from './pages/CV';
 
 function App(props) {
+  const [isMin, setIsMin] = useState(false);
+
   return (
     <BrowserRouter>
       <img className="bug" src="/01111.png"/>
       <div className="screen">
-        <Navbar />
-        <div className="contents">
+        <Navbar
+          isMin={isMin}
+          onToggle={() => setIsMin(prev => !prev)}
+        />
+        <div className={`
+          contents
+          ${isMin ? "min" : "max"}
+        `}>
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/art" element={<Art />} />
