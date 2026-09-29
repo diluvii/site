@@ -17,7 +17,9 @@ function App(props) {
 
   return (
     <BrowserRouter>
-      <img className="bug" src="/01111.png"/>
+      <div className="bugbox">
+        <img className="bug" src="/01111.png"/>
+      </div>
       <div className="screen">
         <Navbar
           isMin={isMin}

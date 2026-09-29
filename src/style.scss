@@ -22,12 +22,32 @@ body, html {
     display: none;
 }
 
-.bug {
+.bugbox {
     position: fixed;
-    width: 12em;
-    height: 12em;
+    object-fit: contain;
+    z-index: 10;
+    width: 16em;
+    height: 16em;
     bottom: 2em;
     right: 2em;
+}
+
+.bug {
+    width: 16em;
+    height: 16em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.5s ease-in;
+}
+
+.bugbox:hover > .bug {
+    width: 8em;
+    height: 8em;
+    opacity: 0;
+    bottom: 4em;
+    right: 4em;
+    transition: all 0.5s ease-in;
 }
 
 * {
@@ -68,10 +88,11 @@ button {
 }
 
 // remove line spacing
-h1, h2, h3, p, a {
+h1, h2, h3, p, a, li {
     margin: 0;
     padding: 0;
     font-weight: 400;
+    color: var(--almost-black);
 }
 
 h2, h3 {
