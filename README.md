@@ -1,3 +1,5 @@
 # Personal Site
 
-Built mostly with React.
+Vite; React; JavaScript. Deployed [here](diluvii.ink).
+
+Need to redo the art page for better UI.

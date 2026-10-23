@@ -10,7 +10,7 @@ import Art from './pages/Art';
 import Code from './pages/Code';
 import UIUX from './pages/UIUX';
 import About from './pages/About';
-import CV from './pages/CV';
+import BrainRef from './pages/BrainRef';
 
 function App(props) {
   const [isMin, setIsMin] = useState(false);
@@ -35,7 +35,7 @@ function App(props) {
               <Route path="/cs" element={<Code />} />
               {/*<Route path="/uiux" element={<UIUX />} />*/}
               <Route path="/about" element={<About/>} />
-              <Route path="/cv" element={<CV/>} />
+              <Route path="/brain-ref" element={<BrainRef/>} />
           </Routes>
         </div>
       </div>

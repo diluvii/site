@@ -52,7 +52,7 @@ nav {
     z-index: 10;
 
     .NavLink, .navlink-div {
-        width: 8em;
+        width: 12em;
         height: 1.75em;
         display: flex;
         align-items: center;
@@ -119,7 +119,7 @@ nav {
 @media (max-width: 440px) {
     .nav-pt1.min {
         .NavLink {
-            width: 18em;
+            width: 12em;
         }
 
         li {

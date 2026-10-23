@@ -21,7 +21,6 @@ function Code(props) {
             </p>
             <p>
                 My GitHub is <a href="https://github.com/diluvii" target="_blank">here</a>. 
-                My CV will be <Link to="/cv">here</Link>. 
                 You can contact me at yawenxue [at] cmu [dot] edu.
             </p>
 

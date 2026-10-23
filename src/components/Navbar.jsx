@@ -20,7 +20,7 @@ function Navbar({ isMin, onToggle }) {
                 {/*<li><NavLink to="uiux" className="NavLink">ui/ux</NavLink></li>*/}
                 <li><NavLink to="/about" className="NavLink">about</NavLink></li>
                 <li><p className="navlink-div">𓅪.˚⊹ ོ</p></li>
-                <li><NavLink to="/cv" className="NavLink">CV</NavLink></li>
+                <li><NavLink to="/brain-ref" className="NavLink">brain atlas</NavLink></li>
             </ul>
             <button
                 className="min-max"
