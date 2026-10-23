@@ -11,10 +11,9 @@ function Code(props) {
                 interested in making and learning all kinds of computational things 
                 really. Especially interested in making systems that preserve representational integrity 
                 and behavioral guarantees under duress. I've done a few years of 
-                software and NLP work, and studied 
-                hardware security through voltage-based fault injection.
+                software and NLP work, and studied hardware security through voltage-based fault injection.
             </p>
-            <p>I also like computational linguistics and good design.</p>
+            <p>I also like computational neuroscience and computational linguistics.</p>
             <p>
                 I am currently undergoing the MSCS program at Carnegie Mellon University. 
                 For undergraduate studies, I double majored in Computer Science and 

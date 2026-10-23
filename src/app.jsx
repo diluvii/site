@@ -33,7 +33,7 @@ function App(props) {
               <Route path="/" element={<Home />} />
               <Route path="/art" element={<Art />} />
               <Route path="/cs" element={<Code />} />
-              <Route path="/uiux" element={<UIUX />} />
+              {/*<Route path="/uiux" element={<UIUX />} />*/}
               <Route path="/about" element={<About/>} />
               <Route path="/cv" element={<CV/>} />
           </Routes>
