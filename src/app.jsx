@@ -7,7 +7,7 @@ import Navbar from './components/Navbar';
 
 import Home from './pages/Home';
 import Art from './pages/Art';
-import Code from './pages/Code';
+import CS from './pages/CS';
 import UIUX from './pages/UIUX';
 import About from './pages/About';
 import BrainRef from './pages/BrainRef';
@@ -32,7 +32,7 @@ function App(props) {
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/art" element={<Art />} />
-              <Route path="/cs" element={<Code />} />
+              <Route path="/cs" element={<CS />} />
               {/*<Route path="/uiux" element={<UIUX />} />*/}
               <Route path="/about" element={<About/>} />
               <Route path="/brain-ref" element={<BrainRef/>} />

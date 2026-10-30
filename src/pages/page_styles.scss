@@ -68,13 +68,78 @@
 }
 
 .slides-container {
-    overflow: hidden;
-    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin-top: 4em;
+    margin-bottom: 4em;
 }
 
-.slides {
-    aspect-ratio: 1.25;
-    border-radius: 0.5;
+.carousel-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .react-pdf__Page {
+        max-width: 100%;
+    }
+
+    canvas {
+        display: block;
+        max-width: 100%;
+        height: auto !important;
+    }
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0.25em 0.25em 0.5em rgba(33, 34, 36, 0.1);
+    color: var(--almost-black);
+
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease, opacity 0.2s ease;
+
+    &:hover:not(:disabled) {
+        background: white;
+    }
+
+    &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+    &.prev {
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    &.next {
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+}
+
+.carousel-counter {
+    font-size: 0.9em;
 }
 
 .brain-containers {

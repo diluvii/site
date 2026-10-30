@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import './page_styles.scss';
 
-function Code(props) {
+function CS(props) {
     return (
         <div className="page">
             <h2>CS & adjacencies &gt;&gt;</h2>
@@ -28,6 +28,13 @@ function Code(props) {
 
             <h3>Projects</h3>
             <ul>
+                <li>
+                    <a
+                        href="https://github.com/meerkat-lang/meerkat"
+                        target="_blank"
+                    >Meerkat programming language</a>
+                    : With Prof. Jonathan Aldrich's research group at Carnegie Mellon University, I worked on implementation of a distributed live reactive language. Specifically, I worked on tables.
+                </li>
                 <li>
                     <a
                         href="https://glitch.cs.dartmouth.edu/" 
@@ -78,4 +85,4 @@ function Code(props) {
     )
 }
 
-export default Code;
+export default CS;
