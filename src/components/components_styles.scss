@@ -4,6 +4,7 @@ nav {
     box-shadow: 0.25em 0em 0.25em rgba(33, 34, 36, 0.25);
     position: fixed;
     min-height: 100vh;
+    z-index: 100;
 
     p, li, button {
         color: white;
@@ -118,8 +119,15 @@ nav {
 /// responsiveness //
 @media (max-width: 440px) {
     .nav-pt1.min {
-        .NavLink {
-            width: 12em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        .NavLink, .navlink-div {
+            width: 16em;
+            padding-left: 2em;
+            //justify-content: center;
+            //font-size: 1.2em;
         }
 
         li {

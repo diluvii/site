@@ -205,4 +205,15 @@
     .post-area.art {
         grid-template-columns: 1fr;
     }
+    .page {
+        padding-left: 2.5em;
+        padding-right: 2em;
+    }
+    .max > .page, .min > .page {
+        padding-left: 4em;
+        padding-right: 3.5em;
+    }
+    .bugbox {
+        display: none;
+    }
 }
