@@ -8,8 +8,13 @@ body, html {
     min-height: 100%;
     height: auto;
     line-height: 1.5;
+    cursor: image-set(url("cursor.png") 2x) 0 0, auto;
 
     color: var(--almost-black);
+}
+
+a, button {
+    cursor: image-set(url("cursor.png") 2x) 0 0, auto;
 }
 
 .logo {
