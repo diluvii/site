@@ -8,13 +8,12 @@ body, html {
     min-height: 100%;
     height: auto;
     line-height: 1.5;
-    cursor: image-set(url("cursor.png") 2x) 0 0, auto;
-
+    cursor: image-set(url("/cursor-star.png") 4x) 16 16, auto;
     color: var(--almost-black);
 }
 
 a, button {
-    cursor: image-set(url("cursor.png") 2x) 0 0, auto;
+    cursor: image-set(url("/cursor-star.png") 4x) 16 16, auto;
 }
 
 .logo {
@@ -41,17 +40,17 @@ a, button {
     width: 16em;
     height: 16em;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 0.5em;
+    right: 0.5em;
     transition: all 0.5s ease-in;
 }
 
 .bugbox:hover > .bug {
-    width: 8em;
-    height: 8em;
-    opacity: 0;
-    bottom: 4em;
-    right: 4em;
+    width: 17em;
+    height: 17em;
+    //opacity: 0;
+    bottom: 0em;
+    right: 0em;
     transition: all 0.5s ease-in;
 }
 

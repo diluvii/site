@@ -37,7 +37,7 @@ function Art(props) {
         /\.(webp|png|jpe?g)$/i.test(img);
 
     return (
-        <div className="page">
+        <div className="page art">
             <h2>art &gt;&gt;</h2>
 
         <div className="slides-container">

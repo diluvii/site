@@ -10,7 +10,6 @@ import Art from './pages/Art';
 import CS from './pages/CS';
 import UIUX from './pages/UIUX';
 import About from './pages/About';
-import BrainRef from './pages/BrainRef';
 
 function App(props) {
   const [isMin, setIsMin] = useState(false);
@@ -18,7 +17,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <div className="bugbox">
-        <img className="bug" src="/01111.png"/>
+        <img className="bug" src="/bug.png"/>
       </div>
       <div className="screen">
         <Navbar
@@ -35,7 +34,6 @@ function App(props) {
               <Route path="/cs" element={<CS />} />
               {/*<Route path="/uiux" element={<UIUX />} />*/}
               <Route path="/about" element={<About/>} />
-              <Route path="/brain-ref" element={<BrainRef/>} />
           </Routes>
         </div>
       </div>
