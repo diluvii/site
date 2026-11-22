@@ -7,17 +7,17 @@ function CS(props) {
         <div className="page">
             <h2>CS & adjacencies &gt;&gt;</h2>
             <p>
-                Hello!! I like compilers and programming languages, though am quite 
+                Hii!! I like compilers and programming languages, though am quite 
                 interested in making and learning all kinds of computational things 
                 really. Especially interested in making systems that preserve representational integrity 
                 and behavioral guarantees under duress. I've done a few years of 
                 software and NLP work, and studied hardware security through voltage-based fault injection.
             </p>
-            <p>I also like computational neuroscience and computational linguistics.</p>
+            <p>I also like computational neuroscience.</p>
             <p>
                 I am currently undergoing the MSCS program at Carnegie Mellon University. 
-                For undergraduate studies, I double majored in Computer Science and 
-                Cognitive Science (focus area in Linguistics) at Dartmouth College.
+                For undergraduate studies, I double majored in Cognitive Science and 
+                Computer Science (focus area in Linguistics) at Dartmouth College.
             </p>
             <p>
                 My GitHub is <a href="https://github.com/diluvii" target="_blank">here</a>. 
@@ -33,7 +33,8 @@ function CS(props) {
                         href="https://github.com/meerkat-lang/meerkat"
                         target="_blank"
                     >Meerkat programming language</a>
-                    : With Prof. Jonathan Aldrich's research group at Carnegie Mellon University, I worked on implementation of a distributed live reactive language. Specifically, I worked on tables.
+                    : With Prof. Jonathan Aldrich's research group at Carnegie Mellon University, I worked on implementation of a distributed live reactive language. (Specifically, I worked on 
+                    the implementation of tables; presentation incoming!)
                 </li>
                 <li>
                     <a

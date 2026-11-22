@@ -8,12 +8,40 @@ body, html {
     min-height: 100%;
     height: auto;
     line-height: 1.5;
-    cursor: image-set(url("/cursor-star.png") 4x) 16 16, auto;
+    cursor: image-set(url("/cursor-star-red.png") 4x) 16 16, auto;
     color: var(--almost-black);
 }
 
 a, button {
-    cursor: image-set(url("/cursor-star.png") 4x) 16 16, auto;
+    cursor: image-set(url("/cursor-star-red.png") 4x) 16 16, auto;
+    //cursor: image-set(url("/cursor-star.png") 4x) 16 16, pointer;
+}
+
+.cursor-trail {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.cursor-trail-dot,
+.cursor-impression {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    background: url("/cursor-star.png") center / contain no-repeat;
+}
+
+.cursor-impression {
+    animation: cursor-impression-fade 5s linear forwards;
+}
+
+@keyframes cursor-impression-fade {
+    0%, 75% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .logo {
@@ -64,6 +92,7 @@ a, button {
     text-size-adjust: 100%;
 
     --almost-black: rgb(10, 3, 31);
+    --sunlight: rgb(255, 186, 66);
     --shadow: 0.25em 0.25em 0.5em rgba(33, 34, 36, 0.25);
 }
 

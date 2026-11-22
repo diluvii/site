@@ -5,7 +5,7 @@ import './page_styles.scss';
 function Home(props) {
     return (
         <div className="page home">
-            <h2>strange birds &gt;&gt;</h2>
+            <h1>strange birds &gt;&gt;</h1>
             <p>𓅪.˚⊹ ོ</p>
             <p></p>
             <p className="desc-home">

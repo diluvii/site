@@ -4,7 +4,8 @@ import {
 } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
-
+import CursorTrail
+ from './components/CursorTrail';
 import Home from './pages/Home';
 import Art from './pages/Art';
 import CS from './pages/CS';
@@ -19,6 +20,7 @@ function App(props) {
       <div className="bugbox">
         <img className="bug" src="/bug.png"/>
       </div>
+      <CursorTrail />
       <div className="screen">
         <Navbar
           isMin={isMin}
