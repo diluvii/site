@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
@@ -26,7 +26,23 @@ function Art(props) {
 
     const [numPages, setNumPages] = useState(0);
     const [pageNumber, setPageNumber] = useState(1);
-    const [containerWidth, setContainerWidth] = useState(700);
+    const [containerWidth, setContainerWidth] = useState(0);
+    const frameRef = useRef(null);
+
+    useEffect(() => {
+        const frame = frameRef.current;
+        if (!frame) return undefined;
+
+        const update = () => {
+            const next = Math.floor(frame.clientWidth);
+            if (next > 0) setContainerWidth(next);
+        };
+
+        update();
+        const observer = new ResizeObserver(update);
+        observer.observe(frame);
+        return () => observer.disconnect();
+    }, []);
 
     const onDocumentLoadSuccess = ({ numPages }) => {
         setNumPages(numPages);
@@ -40,7 +56,7 @@ function Art(props) {
         <div className="page art">
             <h2>art &gt;&gt;</h2>
 
-        <div className="slides-container">
+        <div className="slides-container" ref={frameRef}>
             <Document
                 file={asset("art/portfolio.pdf")}
                 onLoadSuccess={onDocumentLoadSuccess}
@@ -48,12 +64,15 @@ function Art(props) {
                 error={<p>Could not load portfolio PDF.</p>}
             >
                 <div className="carousel-page">
-                    <Page
-                        pageNumber={pageNumber}
-                        width={containerWidth}
-                        renderTextLayer={false}
-                        renderAnnotationLayer={false}
-                    />
+                    {containerWidth > 0 && (
+                        <Page
+                            pageNumber={pageNumber}
+                            width={containerWidth}
+                            devicePixelRatio={Math.min(window.devicePixelRatio || 1, 2)}
+                            renderTextLayer={false}
+                            renderAnnotationLayer={false}
+                        />
+                    )}
 
                     <button
                         className="carousel-arrow prev"

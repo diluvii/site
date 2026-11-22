@@ -21,7 +21,7 @@ nav {
     .NavLink {
         color: white;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 400;
     }
 }
 
@@ -96,13 +96,14 @@ nav {
     background-color: var(--sunlight);
     //background-color: rgb(121, 169, 219);
     transition: 0.3s all ease;
+    font-weight: 700;
 }
 
 .NavLink.active {
     //background-color: rgb(255, 137, 74);
     //background-color: rgb(18, 6, 52);
     transition: 0.3s all ease;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .min-max {
@@ -116,7 +117,20 @@ nav {
     z-index: 9;
 }
 
-/// responsiveness //
+/// footnote styles
+.footnote {
+    margin-top: auto;
+    margin-bottom: -2em;
+
+    hr {
+        width: 75%;
+    }
+    p {
+        font-size: 0.75em;
+    }
+}
+
+/// responsiveness
 @media (max-width: 440px) {
     .nav-pt1.min {
         display: flex;
@@ -133,5 +147,8 @@ nav {
         li {
             font-size: 1em;
         }
+    }
+    .footnote > hr {
+        width: 100%;
     }
 }

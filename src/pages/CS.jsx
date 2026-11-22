@@ -7,7 +7,7 @@ function CS(props) {
         <div className="page">
             <h2>CS & adjacencies &gt;&gt;</h2>
             <p>
-                Hii!! I like compilers and programming languages, though am quite 
+                Hello!! I like compilers and programming languages, though am quite 
                 interested in making and learning all kinds of computational things 
                 really. Especially interested in making systems that preserve representational integrity 
                 and behavioral guarantees under duress. I've done a few years of 

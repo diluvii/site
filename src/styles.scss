@@ -103,6 +103,7 @@ a, button {
 
     .contents {
         width: 100%;
+        min-width: 0;
     }
 }
 
@@ -146,7 +147,11 @@ a {
     margin: 0em;
 }
 
-/// responsiveness //
+sup {
+    font-size: 0.7em;
+}
+
+/// responsiveness
 @media (max-width: 440px) {
     p, li {
         font-size: 0.9em;

@@ -11,6 +11,8 @@ import Art from './pages/Art';
 import CS from './pages/CS';
 import UIUX from './pages/UIUX';
 import About from './pages/About';
+import Notes from './pages/Notes';
+import FAQ from './pages/FAQ';
 
 function App(props) {
   const [isMin, setIsMin] = useState(false);
@@ -36,6 +38,8 @@ function App(props) {
               <Route path="/cs" element={<CS />} />
               {/*<Route path="/uiux" element={<UIUX />} />*/}
               <Route path="/about" element={<About/>} />
+              <Route path="/field-notes" element={<Notes />} />
+              <Route path="/faq" element={<FAQ />} />
           </Routes>
         </div>
       </div>
