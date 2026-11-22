@@ -106,16 +106,19 @@
 
     min-width: 0;
 
+    .carousel-scroll {
+        width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+    }
+
     .react-pdf__Page {
-        max-width: 100%;
         min-width: 0 !important;
         min-height: 0 !important;
     }
 
-    canvas {
-        display: block;
-        max-width: 100%;
-        height: auto !important;
+    .react-pdf__Page__canvas {
+        visibility: visible !important;
     }
 }
 
@@ -219,7 +222,7 @@
     }
 }
 
-/// responsiveness
+/// responsiveness ///
 @media (min-width: 441px) and (max-width: 720px) {
     .desc-home {
         width: 100%;
@@ -230,6 +233,10 @@
 }
 
 @media (max-width: 440px) {
+    .slides-container {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
     .desc-home {
         width: 100%;
     }
@@ -245,6 +252,13 @@
         padding-right: 3.5em;
     }
     .bugbox {
+        display: none;
+    }
+}
+
+/// mobile device => do not display react-pdf!! ///
+@media (hover: none) and (pointer: coarse) {
+    .slides-container {
         display: none;
     }
 }

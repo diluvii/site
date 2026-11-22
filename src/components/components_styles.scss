@@ -1,4 +1,4 @@
-/// navbar styles
+/// navbar styles ///
 nav {
     display: flex;
     box-shadow: 0.25em 0em 0.25em rgba(33, 34, 36, 0.25);
@@ -117,10 +117,10 @@ nav {
     z-index: 9;
 }
 
-/// footnote styles
+/// footnote styles ///
 .footnote {
     margin-top: auto;
-    margin-bottom: -2em;
+    margin-bottom: 0em;
 
     hr {
         width: 75%;
@@ -130,7 +130,7 @@ nav {
     }
 }
 
-/// responsiveness
+/// responsiveness ///
 @media (max-width: 440px) {
     .nav-pt1.min {
         display: flex;

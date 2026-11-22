@@ -41,7 +41,11 @@ function Art(props) {
         update();
         const observer = new ResizeObserver(update);
         observer.observe(frame);
-        return () => observer.disconnect();
+        window.addEventListener("resize", update);
+        return () => {
+            observer.disconnect();
+            window.removeEventListener("resize", update);
+        };
     }, []);
 
     const onDocumentLoadSuccess = ({ numPages }) => {
@@ -64,15 +68,16 @@ function Art(props) {
                 error={<p>Could not load portfolio PDF.</p>}
             >
                 <div className="carousel-page">
-                    {containerWidth > 0 && (
-                        <Page
-                            pageNumber={pageNumber}
-                            width={containerWidth}
-                            devicePixelRatio={Math.min(window.devicePixelRatio || 1, 2)}
-                            renderTextLayer={false}
-                            renderAnnotationLayer={false}
-                        />
-                    )}
+                    <div className="carousel-scroll">
+                        {containerWidth > 0 && (
+                            <Page
+                                pageNumber={pageNumber}
+                                width={Math.min(containerWidth, 700)}
+                                renderTextLayer={false}
+                                renderAnnotationLayer={false}
+                            />
+                        )}
+                    </div>
 
                     <button
                         className="carousel-arrow prev"
