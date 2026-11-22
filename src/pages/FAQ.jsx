@@ -10,7 +10,7 @@ function FAQ() {
                 Its name is Forgle!! It has 47 siblings.
             </p>
             <p>
-                <strong>It blocks my view. How can I get rid of it?</strong>
+                <strong>It blocks my view. How do I get rid of it?</strong>
                 <br/>
                 You can't. Forgle was here before you, and will be here long after you.
             </p>
