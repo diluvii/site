@@ -12,6 +12,19 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     import.meta.url
 ).toString();
 
+function useMedia(query) {
+    const [matches, setMatches] = useState(
+        () => window.matchMedia(query).matches
+    );
+    useEffect(() => {
+        const mql = window.matchMedia(query);
+        const onChange = (e) => setMatches(e.matches);
+        mql.addEventListener("change", onChange);
+        return () => mql.removeEventListener("change", onChange);
+    }, [query]);
+    return matches;
+}
+
 function Art(props) {
     const dummyArtposts = [
         //{ title: "placeholder", desc: "placeholder", img: asset("art/hanged-man.jpg") },
@@ -23,6 +36,8 @@ function Art(props) {
         { title: "placeholder", desc: "placeholder", img: asset("art/sart.webm") },
         //{ title: "placeholder", desc: "placeholder", img: asset("art/boat.jpg") },
     ];
+
+    const isTouch = useMedia("(hover: none) and (pointer: coarse)");
 
     const [numPages, setNumPages] = useState(0);
     const [pageNumber, setPageNumber] = useState(1);
@@ -61,53 +76,65 @@ function Art(props) {
             <h2>art &gt;&gt;</h2>
 
         <div className="slides-container" ref={frameRef}>
-            <Document
-                file={asset("art/portfolio.pdf")}
-                onLoadSuccess={onDocumentLoadSuccess}
-                loading={<p>Loading portfolio...</p>}
-                error={<p>Could not load portfolio PDF.</p>}
-            >
-                <div className="carousel-page">
-                    <div className="carousel-scroll">
-                        {containerWidth > 0 && (
-                            <Page
-                                pageNumber={pageNumber}
-                                width={Math.min(containerWidth, 700)}
-                                renderTextLayer={false}
-                                renderAnnotationLayer={false}
-                            />
-                        )}
-                    </div>
-
-                    <button
-                        className="carousel-arrow prev"
-                        onClick={() =>
-                            setPageNumber((prev) => Math.max(prev - 1, 1))
-                        }
-                        disabled={pageNumber <= 1}
-                        aria-label="Previous page"
+            {isTouch ? (
+                <a
+                    href={asset("art/portfolio.pdf")}
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Open portfolio PDF
+                </a>
+            ) : (
+                <>
+                    <Document
+                        file={asset("art/portfolio.pdf")}
+                        onLoadSuccess={onDocumentLoadSuccess}
+                        loading={<p>Loading portfolio...</p>}
+                        error={<p>Could not load portfolio PDF.</p>}
                     >
-                        &lt;
-                    </button>
+                        <div className="carousel-page">
+                            <div className="carousel-scroll">
+                                {containerWidth > 0 && (
+                                    <Page
+                                        pageNumber={pageNumber}
+                                        width={Math.min(containerWidth, 700)}
+                                        renderTextLayer={false}
+                                        renderAnnotationLayer={false}
+                                    />
+                                )}
+                            </div>
 
-                    <button
-                        className="carousel-arrow next"
-                        onClick={() =>
-                            setPageNumber((prev) =>
-                                Math.min(prev + 1, numPages)
-                            )
-                        }
-                        disabled={!numPages || pageNumber >= numPages}
-                        aria-label="Next page"
-                    >
-                        &gt;
-                    </button>
-                </div>
-            </Document>
+                            <button
+                                className="carousel-arrow prev"
+                                onClick={() =>
+                                    setPageNumber((prev) => Math.max(prev - 1, 1))
+                                }
+                                disabled={pageNumber <= 1}
+                                aria-label="Previous page"
+                            >
+                                &lt;
+                            </button>
 
-            <span className="carousel-counter">
-                {pageNumber} / {numPages || "—"}
-            </span>
+                            <button
+                                className="carousel-arrow next"
+                                onClick={() =>
+                                    setPageNumber((prev) =>
+                                        Math.min(prev + 1, numPages)
+                                    )
+                                }
+                                disabled={!numPages || pageNumber >= numPages}
+                                aria-label="Next page"
+                            >
+                                &gt;
+                            </button>
+                        </div>
+                    </Document>
+
+                    <span className="carousel-counter">
+                        {pageNumber} / {numPages || "—"}
+                    </span>
+                </>
+            )}
         </div>
 
             <p className="center">𓆝 𓆟 𓆞</p>
