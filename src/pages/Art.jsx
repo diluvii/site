@@ -137,7 +137,7 @@ function Art(props) {
             )}
         </div>
 
-            <p className="center">𓆝 𓆟 𓆞</p>
+            <p className="center hide-on-mobile">𓆝 𓆟 𓆞</p>
 
             <div className="post-area art">
                 {dummyArtposts.map((item, i) => (

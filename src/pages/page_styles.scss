@@ -258,7 +258,7 @@
 
 /// mobile device => do not display react-pdf!! ///
 @media (hover: none) and (pointer: coarse) {
-    .slides-container {
+    .slides-container, .hide-on-mobile {
         display: none;
     }
 }
