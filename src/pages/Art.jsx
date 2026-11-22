@@ -26,18 +26,20 @@ function useMedia(query) {
 }
 
 function Art(props) {
-    const dummyArtposts = [
-        //{ title: "placeholder", desc: "placeholder", img: asset("art/hanged-man.jpg") },
+    const allArtposts = [
+        { title: "placeholder", desc: "placeholder", img: asset("art/hanged-man.jpg"), mobileOnly: true },
         { title: "placeholder", desc: "placeholder", img: asset("art/armand.webm") },
         { title: "placeholder", desc: "placeholder", img: asset("art/eboshi.webp") },
         { title: "placeholder", desc: "placeholder", img: asset("art/giordano.jpg") },
-        //{ title: "placeholder", desc: "placeholder", img: asset("art/collage.jpg") },
+        { title: "placeholder", desc: "placeholder", img: asset("art/collage.jpg"), mobileOnly: true },
         { title: "placeholder", desc: "placeholder", img: asset("art/anim-1.webm") },
         { title: "placeholder", desc: "placeholder", img: asset("art/sart.webm") },
-        //{ title: "placeholder", desc: "placeholder", img: asset("art/boat.jpg") },
+        { title: "placeholder", desc: "placeholder", img: asset("art/boat.jpg"), mobileOnly: true },
     ];
 
     const isTouch = useMedia("(hover: none) and (pointer: coarse)");
+
+    const artposts = allArtposts.filter((item) => isTouch || !item.mobileOnly);
 
     const [numPages, setNumPages] = useState(0);
     const [pageNumber, setPageNumber] = useState(1);
@@ -140,8 +142,8 @@ function Art(props) {
             <p className="center hide-on-mobile">𓆝 𓆟 𓆞</p>
 
             <div className="post-area art">
-                {dummyArtposts.map((item, i) => (
-                    <div className="post art" key={i}>
+                {artposts.map((item, i) => (
+                    <div className="post art" key={item.img}>
                         {isImage(item.img) ? (
                             <img
                                 src={item.img}
